@@ -31,8 +31,8 @@ public class LogInServlet extends HttpServlet {
 
             //TODO, gå til login side
 
-            request.setAttribute("besked", "brugernavnet findes ikke");
-            request.getRequestDispatcher("index.jsp").forward(request,response);
+            request.setAttribute("besked", "Opret digselv");
+            request.getRequestDispatcher("WEB-INF/OpretBruger.jsp").forward(request,response);
 
 
         }
