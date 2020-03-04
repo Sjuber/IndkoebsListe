@@ -17,6 +17,11 @@ public class OpretServlet extends HttpServlet {
         String navn = request.getParameter("navn");
         String kodeord = request.getParameter("kodeord");
 
+
+
+
+
+
         if(   ( (Map<String,String>) servletContext.getAttribute("brugerMap") ).containsKey(navn) ){
 
 
