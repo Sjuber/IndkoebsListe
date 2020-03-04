@@ -19,21 +19,27 @@ Her kan du se listen af brugere, og slette dem hvis det skulle være.
 <br>
 
 
-<%--
-<c:forEach var="element" items="${applicationScope.brugerMap}">
-    <h1>If this is the only thing you see</h1>
-    ${element}
-    <h1>then the code</h1>
-    <br>
-    <h1>just doesent work right now</h1>
-</c:forEach>
---%>
+${requestScope.besked}
+
+
+<form action="AdminServlet" method="post">
+    <label for="fname">Slet bruger:</label><br>
+    <input type="text" id="fname" name="navn"><br>
+
+    <input type="submit" value="Slet">
+</form>
+
+<br>
+<br>
 
 
 
 <c:forEach var="element" items="${applicationScope.brugerMap}">
     ${element}
     <br>
+
+
+
 
 </c:forEach>
 

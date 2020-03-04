@@ -12,8 +12,10 @@
 </head>
 <body>
 
-Her kan du registrere dig som bruger på huskelisten
-<br>
+Her kan du registrere dig inden du har adgang til indkøb
+
+
+
 <br>
 <br>
 ${requestScope.besked}
@@ -23,7 +25,7 @@ ${requestScope.besked}
 <br>
 
 <form action="OpretServlet" method="post">
-    <label for="fname">First name:</label><br>
+    <label for="fname">Opret bruger:</label><br>
     <input type="text" id="fname" name="navn"><br>
     <label for="lname">kodeord:</label><br>
     <input type="text" id="lname" name="kodeord"><br><br>
